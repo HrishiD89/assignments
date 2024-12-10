@@ -34,4 +34,15 @@
   .rotate-n-90{
     transform: rotate(-90deg);
   }
+  /* Hide scrollbar but keep functionality */
+.w-full::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  height: 0;
+}
+
+.w-full {
+  -ms-overflow-style: none;  /* For IE and Edge */
+  scrollbar-width: none;     /* For Firefox */
+}
+
 }
