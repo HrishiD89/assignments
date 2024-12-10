@@ -3,7 +3,13 @@ import RelaodSVG from "../assets/reload.svg";
 import TodoSvG from "../assets/todo.svg";
 import CheckBox from "../assets/checkboxactive.svg";
 
-const Filter = ({ toggleFilter, filterData, handleFilterData, toggleShowTags,resetTags }) => {
+const Filter = ({
+  toggleFilter,
+  filterData,
+  handleFilterData,
+  toggleShowTags,
+  resetTags,
+}) => {
   return (
     <div
       className={`${
@@ -92,7 +98,10 @@ const Filter = ({ toggleFilter, filterData, handleFilterData, toggleShowTags,res
         </div>
 
         {/* Show Tags */}
-        <span className="flex items-center gap-3 my-3 cursor-pointer" onClick={toggleShowTags}>
+        <span
+          className="flex items-center gap-3 my-3 cursor-pointer"
+          onClick={toggleShowTags}
+        >
           {filterData.showtags ? (
             <img src={CheckBox} className="w-4 h-4" alt="Checked" />
           ) : (
@@ -103,7 +112,10 @@ const Filter = ({ toggleFilter, filterData, handleFilterData, toggleShowTags,res
       </div>
 
       {/* Reset */}
-      <div className="flex items-center rounded-lg justify-center cursor-pointer bg-primaryColor mt-4" onClick={resetTags} >
+      <div
+        className="flex items-center rounded-lg justify-center cursor-pointer bg-primaryColor mt-4"
+        onClick={resetTags}
+      >
         <span className="p-3">
           <img src={RelaodSVG} alt="" className="w-4 h-4 flip-h p-[2px]" />
         </span>

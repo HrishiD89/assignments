@@ -31,7 +31,7 @@ const Favourite = () => {
                 <img
                   src={LockSvg}
                   alt="lock svg"
-                  className="w-8 h-5 object-cover"
+                  className="w-5 md:w-8 h-5 object-cover"
                 />
                 <span>Private</span>
                 <span className="w-3 h-3">
